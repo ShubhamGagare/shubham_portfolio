@@ -47,7 +47,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10 mt-0">
+      <div className="flex  justify-center relative my-20 z-10 mt-0">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-start justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Designer and Full Stack Developer
@@ -70,9 +70,10 @@ const Hero = () => {
           <div className="flex space-x-8">
             <a href="mailto:shubhamgagare1997@gmail.com">
               <MagicButton
-                title="Let's get in touch"
+                title="Let's connect"
                 icon={<FaLocationArrow />}
                 position="right"
+
               />
             </a>
             <a href="/Shubham_Gagare_Resume.pdf">
@@ -84,7 +85,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div>
+        <div className="flex w-full">
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center ">
 
             <Canvas
