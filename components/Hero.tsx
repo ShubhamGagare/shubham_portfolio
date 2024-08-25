@@ -47,8 +47,8 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex  justify-center relative my-20 z-10 mt-0">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-start justify-center">
+      <div className="flex flex-col-reverse justify-center sm:flex-col-reverse md:flex-col-reverse lg:flex-row xl:flex-row  relative my-20 z-10 mt-0">
+        <div className="w-full sm:w-full md:w-2xl md:w-full lg:w-[45vw] xl:w-[40vw] 2xl:w-[50vw] flex flex-col items-start justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Designer and Full Stack Developer
           </p>
@@ -67,7 +67,7 @@ const Hero = () => {
 
             Crafting seamless digital experiences through innovative design and development
           </p>
-          <div className="flex space-x-8">
+          <div className="flex flex-wrap w-full 2xl:space-x-4 xl:space-x-4 sm:space-x-0 md:space-x-0 lg:space-x-2">
             <a href="mailto:shubhamgagare1997@gmail.com">
               <MagicButton
                 title="Let's connect"
@@ -85,16 +85,17 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="flex w-full">
-          <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center ">
+        <div className="flex w-full xl:w-fit md:w-full lg:w-fit">
+          <div className="w-full sm:w-full md:w-full lg:w-[30vw] xl:w-[50vw] flex flex-col items-center justify-center ">
 
             <Canvas
+              className="mb-8 w-full sm:w-full "
+
               camera={{ position: [2, 2, 30.25], fov: 0.9 }}
               style={{
-                width: '40vw',
+                width: '50vw sm:w-full',
                 height: '60vh',
               }}
-              className="mb-8"
             >
               <ambientLight intensity={1.25} />
               <ambientLight intensity={0.1} />
