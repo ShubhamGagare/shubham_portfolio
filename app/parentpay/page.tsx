@@ -3,12 +3,11 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { CanvasRevealEffect } from "../../components/ui/CanvasRevealEffect";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 
 
-const Page = () => {
-    const router = useRouter()
+const page = () => {
 
     return (
         <section className="w-full py-20">
@@ -19,58 +18,64 @@ const Page = () => {
             {/* remove bg-white dark:bg-black */}
             <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
                 {/* add des prop */}
-                <Card
-                    handleClick={() => router.push("/parentpay/takeregister")}
-                    title="Take Register"
-                    icon={<AceternityIcon order="Take Register" />}
-                    des="Take register is designed to make attendnace process easy for UK school teachers."
+                <Link href="/parentpay/takeregister">
+                    <Card
 
-                >
-                    <CanvasRevealEffect
-                        animationSpeed={5.1}
-                        // add these classed for the border rounded overflowing -> rounded-3xl overflow-hidden
-                        containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
-                    />
-                </Card>
-                <Card
-                    handleClick={() => router.push("/parentpay/fireregister")}
-                    title="Fire Register"
-                    icon={<AceternityIcon order="Fire Register" />}
-                    des="Fire register is designed to support admin , teacher and other school staff in case of fire drills and fire emergency."
-                >
-                    <CanvasRevealEffect
-                        animationSpeed={3}
-                        // change bg-black to bg-pink-900
-                        containerClassName="bg-pink-900 rounded-3xl overflow-hidden"
-                        colors={[
-                            // change the colors of the
-                            [255, 166, 158],
-                            [221, 255, 247],
-                        ]}
-                        dotSize={2}
-                    />
-                    {/* Radial gradient for the cute fade */}
-                    {/* remove this one */}
-                    {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
-                </Card>
-                <Card
-                    handleClick={() => router.push("/parentpay/adminconsole")}
-                    title="Admin console"
-                    icon={<AceternityIcon order="Admin Console" />}
-                    des="Admin console was design to handle all settings in SIMS GEN and other features independent features to support admin tasks."
-                >
-                    <CanvasRevealEffect
-                        animationSpeed={3}
-                        containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
-                        colors={[[125, 211, 252]]}
-                    />
-                </Card>
+                        title="Take Register"
+                        icon={<AceternityIcon order="Take Register" />}
+                        des="Take register is designed to make attendnace process easy for UK school teachers."
+
+                    >
+                        <CanvasRevealEffect
+                            animationSpeed={5.1}
+                            // add these classed for the border rounded overflowing -> rounded-3xl overflow-hidden
+                            containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
+                        />
+                    </Card>
+                </Link>
+                <Link href="/parentpay/fireregister">
+
+                    <Card
+                        title="Fire Register"
+                        icon={<AceternityIcon order="Fire Register" />}
+                        des="Fire register is designed to support admin , teacher and other school staff in case of fire drills and fire emergency."
+                    >
+                        <CanvasRevealEffect
+                            animationSpeed={3}
+                            // change bg-black to bg-pink-900
+                            containerClassName="bg-pink-900 rounded-3xl overflow-hidden"
+                            colors={[
+                                // change the colors of the
+                                [255, 166, 158],
+                                [221, 255, 247],
+                            ]}
+                            dotSize={2}
+                        />
+                        {/* Radial gradient for the cute fade */}
+                        {/* remove this one */}
+                        {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
+                    </Card>
+                </Link>
+                <Link href="/parentpay/adminconsole">
+
+                    <Card
+                        title="Admin console"
+                        icon={<AceternityIcon order="Admin Console" />}
+                        des="Admin console was design to handle all settings in SIMS GEN and other features independent features to support admin tasks."
+                    >
+                        <CanvasRevealEffect
+                            animationSpeed={3}
+                            containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
+                            colors={[[125, 211, 252]]}
+                        />
+                    </Card>
+                </Link>
             </div>
         </section>
     );
 };
 
-export default Page;
+export default page;
 
 const Card = ({
     title,
@@ -78,18 +83,18 @@ const Card = ({
     children,
     // add this one for the desc
     des,
-    handleClick
+    // handleClick
 }: {
     title: string;
     icon: React.ReactNode;
     children?: React.ReactNode;
     des: string;
-    handleClick: () => void;
+    // handleClick: () => void;
 }) => {
     const [hovered, setHovered] = React.useState(false);
     return (
         <div
-            onClick={() => handleClick()}
+            // onClick={() => handleClick()}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             // change h-[30rem] to h-[35rem], add rounded-3xl
