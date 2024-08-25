@@ -72,7 +72,7 @@ export const projects = [
   {
     id: 1,
     title: "Edutrack - AI based School MIS",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    des: "Inspired by SIMS Next Gen created AI based Smart MIS to improve educators efficiency and ease of use.",
     img: "/edutrack.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/prisma.svg", "ai.svg"],
     link: "https://school-management-system-web-ten.vercel.app/",
