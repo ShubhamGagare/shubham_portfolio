@@ -70,7 +70,7 @@ function page() {
                                     <li>Need to take register as quick as possible and move on to teaching</li>
                                     <li>Mark students as per the UK DFE code guidelines and add relative comment</li>
                                     <li>Ensure all students are marked to make sure safegaurding of students</li>
-                                    <li>In secondary display all lesson attendace marks to teacher to keep informed abnout student's wherabouts</li>
+                                    <li>In secondary display all lesson attendace marks to teacher to keep informed abnout student&apos;s wherabouts</li>
                                     <li>Select meal choice of the students while taking register so canteen will be informed</li>
                                 </ul>
                             </div>
