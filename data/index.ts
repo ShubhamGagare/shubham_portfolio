@@ -71,44 +71,35 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "HandCraftUI - Component Libarary ",
+    des: "Developing a custom UI component library called HandcraftUI, inspired by Shadcn UI, featuring support for npx imports",
+    img: "/edutrack.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/prisma.svg", "ai.svg"],
+    link: "https://www.npmjs.com/package/handcraft-ui/",
+  },
+  {
+    id: 2,
     title: "Edutrack - AI based School MIS",
     des: "Inspired by SIMS Next Gen created AI based Smart MIS to improve educators efficiency and ease of use.",
     img: "/edutrack.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/prisma.svg", "ai.svg"],
     link: "https://school-management-system-web-ten.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "SIMS Next Gen",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/SIMS.webp",
-    iconLists: ["/figma.svg", "/re.svg", "/ts.svg"],
-    link: "/parentpay",
 
 
   },
-  {
-    id: 3,
-    title: "Volpay Testsuite",
-    des: "It is a In-House automation testing prodouct.It is specifically designed and developed to meet the testing requirements of the VolPay.",
-    img: "/volante.jpg",
-    iconLists: ["/angular.svg", "/css-3.svg", "/java-4.svg", "/kafka.svg"],
-    link: "/volante",
+  // {
+  //   id: 3,
+  //   title: "SiyaraTech Innovations",
+  //   des: "",
+  //   img: "/volante.jpg",
+  //   iconLists: ["/angular.svg", "/css-3.svg", "/java-4.svg", "/kafka.svg"],
+  //   link: "/volante",
 
-  },
-  {
-    id: 4,
-    title: "Big Market",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/bm-portfolio.png",
-    iconLists: ["/figma.svg", "/re.svg", "/ts.svg"],
-    link: "/bigmarket",
-
-  },
+  // },
   {
     id: 5,
     title: "Paytm Clone",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    des: "",
     img: "/paytm.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/express.svg",],
     link: "https://github.com/ShubhamGagare/paytm-Nextjs",
@@ -117,7 +108,7 @@ export const projects = [
   {
     id: 6,
     title: "Medium Clone",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    des: "",
     img: "/medium.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg",],
     link: "https://github.com/ShubhamGagare/medium-clone",
@@ -125,38 +116,6 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
-  // {
-  //   quote:
-  //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-  //   name: "Michael Johnson",
-  //   title: "Director of AlphaStream Technologies",
-  // },
-  // {
-  //   quote:
-  //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-  //   name: "Michael Johnson",
-  //   title: "Director of AlphaStream Technologies",
-  // },
-  // {
-  //   quote:
-  //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-  //   name: "Michael Johnson",
-  //   title: "Director of AlphaStream Technologies",
-  // },
-  // {
-  //   quote:
-  //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-  //   name: "Michael Johnson",
-  //   title: "Director of AlphaStream Technologies",
-  // },
-  // {
-  //   quote:
-  //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-  //   name: "Michael Johnson",
-  //   title: "Director of AlphaStream Technologies",
-  // },
-];
 
 export const companies = [
   {
@@ -176,24 +135,38 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Software Engineer - Volante",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    title: "Product Designer - ParentPay",
+    time: "Nov 2021 - Apr 2024",
+    desc: "",
+    details: [
+      "Conducting user research and interviews with UK school staff.", "Created low - high fidelity wireframes for Fire and Take register.", "Improvised on received feedback from pilot schools which resulted in 25 % in user adoption", "The new design is well received by the school staff, who expressed positive feedback."],
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp2.svg",
+    link: "/parentpay"
   },
   {
     id: 2,
-    title: "Product Designer - ParentPay",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    title: "Software Engineer - Volante",
+    time: "March 2019 - Nov 2021",
+    desc: "",
+    details: [
+      " Worked in a team of 3 to provide integrated design solutions for automation tools across different versions of Volpay.", "Conducted user research to design new and improved features in collaboration with the team.", "Developed frontend (HTML, CSS, AngularJS) and backend (Java) components.", "Accelerated automation configuration, saving testers' time by 40%.", "Collaborated with Product Managers, BA and QA teams to ensure product quality."],
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+    link: "/volante"
+
   },
   {
     id: 3,
-    title: "Full Stack - Freelance Web Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Big Market - Freelance Web Dev Project",
+    time: "",
+    desc: "Led the dev of a mobile app for a client, from initial concept to deployment.",
+    details: [
+      " Conducted user research and interviews to understand customer needs.", "Created wireframes and prototypes to streamline the design process.", "Developed an end-to-end web application using React, Node.js, and PostgreSQL."],
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
+    link: "/bigmarket"
+
   }
 ];
 
@@ -211,6 +184,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    link: "www.linkedin.com/in/shubham-gagare-543a05160"
+    link: "https://www.linkedin.com/in/shubham-gagare-543a05160"
   },
 ];

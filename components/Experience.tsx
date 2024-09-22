@@ -1,54 +1,48 @@
-import React from "react";
+'use client'
 
-import { workExperience } from "@/data";
-import { Button } from "./ui/MovingBorders";
+import { workExperience } from '@/data'
+import Link from 'next/link'
+import React, { useState } from 'react'
 
-const Experience = () => {
+interface ExperienceProps {
+  className?: string
+}
+
+
+export default function Experience({ className = '' }: ExperienceProps) {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
+
   return (
-    <div className="py-20 w-full">
-      <h1 className="heading">
-        My <span className="text-purple">work experience</span>
-      </h1>
-
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
-        {workExperience.map((card) => (
-          <Button
-            key={card.id}
-            //   random duration will be fun , I think , may be not
-            duration={Math.floor(Math.random() * 10000) + 10000}
-            borderRadius="1.75rem"
-            style={{
-              //   add these two
-              //   you can generate the color from here https://cssgradient.io/
-              background: "rgb(4,7,29)",
-              backgroundColor:
-                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-              // add this border radius to make it more rounded so that the moving border is more realistic
-              borderRadius: `calc(1.75rem* 0.96)`,
-            }}
-            // remove bg-white dark:bg-slate-900
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+    <div className={`flex-col space-y-8 h-fit ${className}`}>
+      <h1 className='text-4xl font-semibold py-8'>Work Experience - 5+ Years</h1>
+      <div className='flex-col space-y-8'>
+        {workExperience.map((experience, index) => (
+          <div
+            className='flex-col space-y-4'
+            key={index}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
           >
-            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
-              <img
-                src={card.thumbnail}
-                alt={card.thumbnail}
-                className="lg:w-32 md:w-20 w-16"
-              />
-              <div className="lg:ms-5">
-                <h1 className="text-start text-xl md:text-2xl font-bold">
-                  {card.title}
-                </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
-                  {card.desc}
-                </p>
-              </div>
+            <Link href={experience.link}>
+              <h2 className='text-2xl underline'>{experience.title}</h2>
+              <h3 className='text-xl text-muted-foreground'>{experience.time}</h3>
+            </Link>
+            <p className={`transition-all duration-500 ease-in-out ${hoveredIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+              } overflow-hidden`}>
+              {experience.desc}
+            </p>
+            <div className={`space-y-2 transition-all duration-500 ease-in-out ${hoveredIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+              } overflow-hidden`}>
+              {experience.details.map((detail, detailIndex) => (
+                <div className='flex items-center space-x-2' key={detailIndex}>
+                  <div className='w-1 h-1 bg-black-100 rounded-full' aria-hidden="true"></div>
+                  <p>{detail}</p>
+                </div>
+              ))}
             </div>
-          </Button>
+          </div>
         ))}
       </div>
     </div>
-  );
-};
-
-export default Experience;
+  )
+}
