@@ -3,6 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 import Link from "next/link";
+import { File } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -17,13 +18,22 @@ const Footer = () => {
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Reach out to me today and let&apos;s discuss
         </p>
-        <a href="mailto:shubhamgagare1997@gmail.com">
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
+        <div className="flex space-x-4">
+          <a href="mailto:shubhamgagare1997@gmail.com">
+            <MagicButton
+              title="Let's get in touch"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
+          <a href="./Shubham_Gagare_Resume.pdf">
+            <MagicButton
+              title="Get Resume"
+              icon={<File />}
+              position="right"
+            />
+          </a>
+        </div>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
