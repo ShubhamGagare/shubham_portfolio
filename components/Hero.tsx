@@ -13,8 +13,17 @@ export default function Hero() {
   const navItems = [
     { href: "#projects", label: "My projects" },
     { href: "#work-ex", label: "Work Ex" },
-    { href: "#about-me", label: "About me" },
+    { href: "#contact", label: "Contact" },
   ]
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    const element = document.querySelector(href)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+    setIsMenuOpen(false)
+  }
 
   return (
     <div className="h-screen grid lg:grid-cols-12 items-center lg:justify-between xl:justify-between w-full relative">
@@ -40,6 +49,7 @@ export default function Hero() {
               key={item.href}
               href={item.href}
               className="block hover:text-primary transition-colors"
+              onClick={(e) => handleNavClick(e, item.href)}
             >
               {item.label}
             </Link>
@@ -62,7 +72,7 @@ export default function Hero() {
                   key={item.href}
                   href={item.href}
                   className="text-lg hover:text-primary transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={(e) => handleNavClick(e, item.href)}
                 >
                   {item.label}
                 </Link>
@@ -71,8 +81,6 @@ export default function Hero() {
           </SheetContent>
         </Sheet>
       </div>
-
-
     </div>
   )
 }

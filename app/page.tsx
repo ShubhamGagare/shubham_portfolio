@@ -13,20 +13,21 @@ import Projects from "@/components/Projects";
 
 const Home = () => {
   return (
-    <main className="relativeflex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-8xl">
         {/* <FloatingNav navItems={navItems} /> */}
         <Hero />
-        <div className="min-h-screen grid  lg:grid-cols-12 xl:grid-cols-12 justify-between w-full xl:space-x-16 lg:space-x-16">
-          <Projects className="col-span-6" />
-          <Experience className="col-span-6 pb-8" />
+        <div className="min-h-screen grid lg:grid-cols-12 xl:grid-cols-12 justify-between w-full xl:space-x-16 lg:space-x-16">
+          <div id="projects" className="col-span-6">
+            <Projects />
+          </div>
+          <div id="work-ex" className="col-span-6 pb-8">
+            <Experience />
+          </div>
         </div>
-        {/* <Grid />
-        <RecentProjects />
-        <Clients />
-        <Experience /> */}
-        {/* <Approach /> */}
-        <Footer />
+        <div id="contact" className="col-span-6 pb-8">
+          <Footer />
+        </div>
       </div>
     </main>
   );
