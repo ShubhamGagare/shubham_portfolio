@@ -17,7 +17,7 @@ function page() {
                 </div>
                 <div className='flex-col space-y-16 '>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-4xl font-bold max-w-44 min-w-44'>What is Testuite?</h1>
+                        <h1 className='flex text-4xl font-bold  min-w-44'>What is Testuite?</h1>
                         <div className='flex-col space-y-4' >
                             <h2 className='flex text-2xl font-bold '>Bank</h2>
                             <Image
@@ -40,14 +40,14 @@ function page() {
 
                     </div>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-4xl font-bold max-w-44 min-w-44'>Product Vision</h1>
+                        <h1 className='flex text-4xl font-bold  min-w-44'>Product Vision</h1>
                         <p className='flex text-md'>
                             This suite was developed as In-House automation testing prodouct.It is specifically designed and developed to meet the testing requirements of the VolPay. The main moto of this tool was giving the automating regression and functional testing support which are not possible in existing available tools .
 
                             VolPay is a suite of software applications designed specifically to accelerate all aspects of payment integration, processing and orchestration.</p>
                     </div>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-3xl font-bold max-w-44 min-w-44'>Discovered User Problem</h1>
+                        <h1 className='flex text-3xl font-bold  min-w-44'>Discovered User Problem</h1>
                         <div className='flex-col  space-y-8'>
                             <div className='flex-col mt-2'>
                                 <ul className="px-6">
@@ -61,7 +61,7 @@ function page() {
                         </div>
                     </div>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-3xl font-bold max-w-44 min-w-44'>Outcomes</h1>
+                        <h1 className='flex text-3xl font-bold  min-w-44'>Outcomes</h1>
                         <div className='flex-col  space-y-8'>
                             <div className='flex-col mt-2'>
                                 <ul className="px-6">
@@ -75,7 +75,7 @@ function page() {
                         </div>
                     </div>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-4xl font-bold max-w-44 min-w-44'>My Role</h1>
+                        <h1 className='flex text-4xl font-bold  min-w-44'>My Role</h1>
                         <div className='flex-col'>
                             <p className='flex text-md'>
                                 I was the part of the small team.There was no BA support so our team only had to design,develop end to end solutions.So I had opportunity to designed and developed the many functionalities from fronted to backend and DB architeture.</p>
@@ -91,7 +91,7 @@ function page() {
                         </div>
                     </div>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-4xl font-bold max-w-44 min-w-44'>User Journey</h1>
+                        <h1 className='flex text-4xl font-bold  min-w-44'>User Journey</h1>
 
                         <div className='flex space-x-4 w-full overflow-auto'>
                             <Image
@@ -101,7 +101,7 @@ function page() {
                         </div>
                     </div>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-4xl font-bold max-w-44 min-w-44'>Process Highlights</h1>
+                        <h1 className='flex text-4xl font-bold  min-w-44'>Process Highlights</h1>
 
                         <div className='flex space-x-4 w-full overflow-auto'>
                             <Image
@@ -111,7 +111,7 @@ function page() {
                         </div>
                     </div>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-4xl font-bold max-w-44 min-w-44'>My Role</h1>
+                        <h1 className='flex text-4xl font-bold  min-w-44'>My Role</h1>
                         <div className='flex-col'>
                             <p className='flex text-md'>
                                 *As the product is In-house development and due to company regulations screenshots are not uploaded to keep the details confidential. These are the mirror designs of the core profiles which I have designed.</p>
@@ -128,7 +128,7 @@ function page() {
                         </div>
                     </div>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-4xl font-bold max-w-44 min-w-44'>User Testing</h1>
+                        <h1 className='flex text-4xl font-bold  min-w-44'>User Testing</h1>
                         <div className='flex-col'>
                             <div className='flex-col mt-2'>
                                 <ul className="px-6">
@@ -140,7 +140,7 @@ function page() {
                         </div>
                     </div>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-4xl font-bold max-w-44 min-w-44'>Conclusion</h1>
+                        <h1 className='flex text-4xl font-bold  min-w-44'>Conclusion</h1>
                         <p className='flex text-md'>
                             The newly redesigned testuite allows testers to configure and automated 70% more testcases. The redesigned testsuite saves the countless hours of the testing team.I learn design new solutions which can be simple and scalable for B2B product. I am glad to learn that even by making small changes, we are able to yield big impacts and create a great experience for users.</p>
                     </div>

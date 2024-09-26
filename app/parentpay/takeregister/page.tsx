@@ -17,19 +17,19 @@ function page() {
                 </div>
                 <div className='flex-col space-y-16 '>
                     <div className="flex-col   space-y-8">
-                        <h1 className=' text-4xl font-bold max-w-44 min-w-44'>Live Demo</h1>
+                        <h1 className=' text-4xl font-bold  min-w-44'>Live Demo</h1>
                         <iframe className='w-full  h-[768px]'
                             src="https://parentpay.wistia.com/medias/0diawfj7ys"
                             frameBorder="0" allowFullScreen></iframe>
 
                     </div>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-4xl font-bold max-w-44 min-w-44'>The Challange</h1>
+                        <h1 className='flex text-4xl font-bold  min-w-44'>The Challange</h1>
                         <p className='flex text-md'>
                             ParentPay&apos;s legacy product, SIMS, held a dominant 75% market share. The challenge was to modernize its &ldquo;take register&ldquo; functionality and integrate additional features like dinner registers, meal choices, and UK DfE codes. Teachers were accustomed to the existing system and its limitations. My task was to redesign the register system to support primary schools while ensuring scalability for secondary school requirements. This project required a deep understanding of user needs and a seamless transition from the old system to a new, user-friendly interface.</p>
                     </div>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-4xl font-bold max-w-44 min-w-44'>User Research</h1>
+                        <h1 className='flex text-4xl font-bold  min-w-44'>User Research</h1>
                         <div className='flex-col  space-y-8'>
                             <div className='flex-col space-y-4'>
                                 <h2 className='flex text-2xl font-bold'>Target audience</h2>
@@ -69,7 +69,7 @@ function page() {
                         </div>
                     </div>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-4xl font-bold max-w-44 min-w-44'>Findings and Analysis</h1>
+                        <h1 className='flex text-4xl font-bold  min-w-44'>Findings and Analysis</h1>
                         <p className='flex text-md'>
                             Teachers wants complete register quickly and move on to teaching
                             Need a easy way to mark students ,add the comments and select meal choice
@@ -79,14 +79,14 @@ function page() {
                             Admin needs to know accurate register status of all class in school</p>
                     </div>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-4xl font-bold max-w-44 min-w-44'>User Testing</h1>
+                        <h1 className='flex text-4xl font-bold  min-w-44'>User Testing</h1>
                         <ul className="px-6 flex-col text-md">
                             <li className="list-disc w-full">Conducted user interviews for various features with users.</li>
                             <li className="list-disc w-full">Conducted tree testing by using surveys with users</li>
                         </ul>
                     </div>
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-4xl font-bold max-w-44 min-w-44'>Designs</h1>
+                        <h1 className='flex text-4xl font-bold  min-w-44'>Designs</h1>
 
                         <div className='flex space-x-4 w-full overflow-auto'>
                             <Image
@@ -105,7 +105,7 @@ function page() {
                     </div>
 
                     <div className='flex-col  space-y-8'>
-                        <h1 className='flex text-4xl font-bold max-w-44 min-w-44'>Conclusion</h1>
+                        <h1 className='flex text-4xl font-bold  min-w-44'>Conclusion</h1>
                         <p className='flex text-md'>
                             The new register system for ParentPay successfully modernizes the &ldquo;take register&ldquo;functionality, addressing the limitations of the legacy system. By incorporating features like meal choices, UK DfE codes, and a summary view, the system meets the needs of both primary and secondary school teachers. The streamlined process allows teachers to quickly and accurately mark attendance, reducing the time spent on administrative tasks and increasing their focus on teaching. Admins benefit from real-time updates and a comprehensive view of the attendance status across the school, ensuring student safety and efficient school management.</p>
                     </div>
