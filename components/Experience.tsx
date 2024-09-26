@@ -17,16 +17,17 @@ export default function Experience({ className = '' }: ExperienceProps) {
       <h1 className='text-4xl font-semibold py-8'>Work Experience - 5+ Years</h1>
       <div className='flex-col space-y-8'>
         {workExperience.map((experience, index) => (
-          <div
+          <Link
+            href={experience.link}
             className='flex-col space-y-4'
             key={index}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            <Link href={experience.link}>
+            <div >
               <h2 className='text-2xl underline'>{experience.title}</h2>
               <h3 className='text-xl text-muted-foreground'>{experience.time}</h3>
-            </Link>
+            </div>
             <p className={`transition-all duration-500 ease-in-out ${hoveredIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
               } overflow-hidden`}>
               {experience.desc}
@@ -40,7 +41,7 @@ export default function Experience({ className = '' }: ExperienceProps) {
                 </div>
               ))}
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
